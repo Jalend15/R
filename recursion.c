@@ -1,7 +1,8 @@
 #include<stdio.h>
 int p(int n, int m)
 {
-
+  if(m==n)
+    return  1+p(n,m-1);
   if(m==0 || n<0)
     return 0;
   if(n==0||m==1)
